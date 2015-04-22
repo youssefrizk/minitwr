@@ -7,12 +7,11 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
-var inscription = require('./routes/inscription');
-<<<<<<< HEAD
+
+
 var nouvinscr = require('./routes/nouvinscr');
-=======
+
 var home = require('./routes/home');
->>>>>>> aa0b06e7088a35fc6d268ef9a7db5742fe092416
 
 
 // view engine setup
@@ -26,12 +25,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/users', users);
-app.use('/inscription', inscription);
-<<<<<<< HEAD
-app.use('/nouvinscr', inscription);
-=======
+
+
+app.use('/nouvinscr', nouvinscr);
+
 app.use('/home', home);
->>>>>>> aa0b06e7088a35fc6d268ef9a7db5742fe092416
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
