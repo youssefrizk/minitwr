@@ -10,6 +10,8 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 var nouvinscr = require('./routes/nouvinscr');
 var home = require('./routes/home');
+var newuser = require('./routes/newuser');
+var connexion = require('./routes/connexion');
 
 
 // view engine setup
@@ -27,6 +29,8 @@ app.use('/', routes);
 app.use('/users', users);
 app.use('/nouvinscr', nouvinscr);
 app.use('/home', home);
+app.use('/newuser', newuser);
+app.use('/connexion', connexion);
 
 
 // catch 404 and forward to error handler
