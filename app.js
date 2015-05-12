@@ -6,12 +6,9 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var app = express();
-var routes = require('./routes/index');
-var users = require('./routes/users');
-var nouvinscr = require('./routes/nouvinscr');
-var home = require('./routes/home');
-var newuser = require('./routes/newuser');
-var connexion = require('./routes/connexion');
+var pagedeco = require('./routes/pagedeco');
+var index = require('./routes/index');
+var inscription = require('./routes/inscription');
 
 
 // view engine setup
@@ -25,13 +22,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'jade');
 app.set('views', path.join(__dirname, 'views'));
 
-app.use('/', routes);
-app.use('/users', users);
-app.use('/nouvinscr', nouvinscr);
-app.use('/home', home);
-app.use('/newuser', newuser);
-app.use('/connexion', connexion);
-
+app.use('/', pagedeco);
+app.use('/inscription', inscription);
+app.use('/index', index);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -65,3 +58,6 @@ app.use(function(err, req, res, next) {
 
 
 module.exports = app;
+
+/*DEBUG=* PORT=1234 ./bin/www**/
+
