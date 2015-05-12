@@ -1,11 +1,35 @@
-extends layoutco
-block content
-  h1= title
-  link(rel='stylesheet', href='style.css')
-  p Exprimez toi !
-  form(action='/', method='POST')
-    textarea(name="tweet", rows=3, columns=50)
-    input(type='submit', content='Sends')
+doctype html
+html
+  head
+    link(href='bootstrap/css/bootstrap.css', rel='stylesheet')
+    link(href='index.css', rel='stylesheet')
+  body
+  .navbar.navbar-default
+    .container
+      a.navbar-brand(href='#')
+        img#Logo(alt='Logo', src='http://www.bullionexperts.com/images/SBI-logo.svg.png')
+      p.nav.navbar-nav.nomdusite TweetRise
+      form.navbar-form.navbar-right.inline-form
+        div
+          a.btn.btn-danger.btn-sm(href='#', role='button') Deconnexion
+    br
+    br
+    br
+    br
+    .container
+      .row
+        .col-lg-8.col-lg-offset-2
+          .pagetweet
+            p(align='center') Quoi de neuf ?
+            form(align='center', ,='', action='/pagetweet', method='POST')
+              textarea(name='tweet', ,='', rows='3,', columns='150')
+            input(align='center', type='submit', ,='', content='Envoyer')
 
-    - each tweet in tweets
-      p=tweet
+            ul
+              - each tweet in tweets
+                li= tweet
+            br
+            br
+            br
+            br
+
