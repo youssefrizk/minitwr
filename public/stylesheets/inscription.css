@@ -1,0 +1,52 @@
+.nomdusite
+{
+    font-family: Verdana, Arial, sans-serif;
+    font-size: medium;
+	padding-top: 13px;
+}
+
+.container {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.navbar {
+	position: relative;
+	min-height: 50px;
+	margin-bottom: 0px;
+	border: 1px solid transparent;
+}
+
+.navbar-default {
+	background-color: #f8f8f8;
+	border-color: #e7e7e7;
+}
+
+.row{
+	margin-right: 400px;
+	margin-left: 400px;
+}
+
+.formulaire {
+	margin-top:130px;
+}
+
+#Logo
+{
+	line-height:20px;
+	height:100%;
+}
+
+.btn {
+	border-radius:0;
+}
+
+.btn-danger {
+    background-color:#f44d3c;
+}
+
+.btn-block {
+	border-radius:15px;
+}

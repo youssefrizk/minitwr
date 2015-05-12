@@ -1,0 +1,99 @@
+/*CSS du "layout"*/
+
+html, body {
+  height: 100%;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 0px;
+  border: 1px solid transparent;
+}
+
+.navbar-default {
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+}
+
+.input {	/*en cas de reduction de la taille, le bouton restera a coté du formulaire*/
+  display: inline-block;
+  width: 100px;
+}
+
+#brand-image {
+		line-height:20px;
+		height:100%;
+}
+
+.btn {
+border-radius:0;
+}
+
+.btn-danger {
+    background-color:#f44d3c;
+}
+
+/*CSS du "corps"*/
+
+#wrap {
+  min-height: 100%;
+  height: 100%;
+  margin: 0 auto -82px 0;
+  padding: 0;
+}
+
+.center-row {
+  height:50%;
+  width:100%;
+}
+
+.center-container {
+  height:100%;
+  width:100%;
+  margin:0;
+}
+
+.center-row > div {
+  height:100%;
+  width:50%;
+  display: table-cell;
+  border:0 solid #eee;
+  color:#fff;
+  vertical-align:middle;
+}
+
+.fd-un {
+  background:#efefef url('http://img0.cfstatic.com/wallpapers/c2dc72b40703121a2d92e844b24ff1d5_large.jpeg');
+  height:100%;
+  max-width:1600px;
+  max-height:900px;
+}
+
+.fd-deux {
+  background:#efefef url('http://www.mrwallpaper.com/wallpapers/Glen-Canyon-Utah-1600x900.jpg');
+  height:100%;
+  max-width:1600px;
+  max-height:900px;
+}
+
+.fd-trois {
+  background:#efefef url('http://img1.gtsstatic.com/wallpapers/5cf989b7308ba23098edccc90af9a037_large.jpeg');
+  height:100%;
+  max-width:1600px;
+  max-height:900px;
+}
+
+.fd-quatre {
+  background:#efefef url('http://www.1wallpaperhd.com/wp-content/uploads/Sports/FTP1/1600x900/Parachute%2002%20Wallpapers%20HD%201600x900.jpg');
+  width:900px;
+  max-width:1600px;
+  max-height:900px;
+}
