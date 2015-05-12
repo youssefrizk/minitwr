@@ -1,8 +1,8 @@
 doctype html
 html
   head
-    link(href='bootstrap/css/bootstrap.css', rel='stylesheet')
-    link(href='index.css', rel='stylesheet')
+    link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css', rel='stylesheet')
+    link(href='./stylesheets/index.css', rel='stylesheet')
   body
   .navbar.navbar-default
     .container
@@ -21,8 +21,8 @@ html
         .col-lg-8.col-lg-offset-2
           .pagetweet
             p(align='center') Quoi de neuf ?
-            form(align='center', ,='', action='/pagetweet', method='POST')
-              textarea(name='tweet', ,='', rows='3,', columns='150')
+            form(align='center', ,='', action='/', method='POST')
+              textarea(name='tweet', ,='', rows='3,', columns='50')
             input(align='center', type='submit', ,='', content='Envoyer')
 
             ul
