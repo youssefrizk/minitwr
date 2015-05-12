@@ -1,11 +1,11 @@
-extends layout
+extends layoutco
 block content
   h1= title
   link(rel='stylesheet', href='style.css')
-  p Exprimez vous !
+  p Exprimez toi !
   form(action='/', method='POST')
     textarea(name="tweet", rows=3, columns=50)
     input(type='submit', content='Sends')
-  ul
+
     - each tweet in tweets
-      li= tweet
+      p=tweet
