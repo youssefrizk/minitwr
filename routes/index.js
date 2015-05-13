@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
 
 router.post('/', function(req, res, next) {
 	tweets.unshift(req.body.tweet);
-	res.redirect('/');
+	res.redirect('/index');
 });
 
 module.exports = router;
