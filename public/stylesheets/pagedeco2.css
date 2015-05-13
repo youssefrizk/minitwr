@@ -1,0 +1,69 @@
+body {
+	background: url('http://img0.gtsstatic.com/wallpapers/270c4bd58ad3f7a29b304360fb0ebfe6_large.jpeg')
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+.corps {
+	padding-top: 550px;
+}
+
+.nomdusite
+{
+    font-family: Verdana, Arial, sans-serif;
+    font-size: medium;
+	padding-top: 13px;
+}
+
+h1 {
+    font-size: xxx-large;
+	color: white;
+}
+
+.lato {
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 0px;
+  border: 1px solid transparent;
+}
+
+.navbar-default {
+	background-color: #f8f8f8;
+	border-color: #e7e7e7;
+}
+
+#Logo
+{
+	line-height:20px;
+	height:100%;
+}
+
+.btn-primary {
+	border-radius:0;
+}
+
+.btn-danger {
+    background-color:#f44d3c;
+}
+
+.btn-huge {
+	padding:17px 22px;
+	font-size:22px;
+}
