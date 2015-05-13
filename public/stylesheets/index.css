@@ -2,6 +2,10 @@ body {
   background: url('http://i.ytimg.com/vi/AV48vINy134/maxresdefault.jpg');
 }
 
+h3 {
+	padding-bottom: 10px;
+}
+
 .nomdusite
 {
     font-family: Verdana, Arial, sans-serif;
@@ -13,12 +17,14 @@ body {
   position: relative;
   min-height: 50px;
   margin-bottom: 0px;
+  padding-bottom:0px;
   border: 1px solid transparent;
 }
 
 .navbar-default {
   background-color: #f8f8f8;
   border-color: #e7e7e7;
+  padding-bottom:0px;
 }
 
 .container {
@@ -33,16 +39,6 @@ body {
   margin-left: -15px;
 }
 
-[class*="col-"] {
-  background-color: white;
-  border: 2px solid black;
-  border-radius: 6px;
-  line-height: 40px;
-  text-align: center;
-  padding-bottom:300px;
-  padding-top:50px;
-}
-
 #Logo
 {
 	line-height:20px;
@@ -55,4 +51,23 @@ body {
 
 .btn-danger {
     background-color:#f44d3c;
+}
+
+.case {
+	background:#FFFFFF;
+	color:#606060;
+	border:2px outset #D0D0D0;
+	font-weight:900;
+	border-radius:5px;
+	width:900px;
+	height:60px;
+	margin-left:50px;
+	padding:10px;
+}
+
+textarea {
+	width:900px;
+    height:70px; 
+    border-radius: 5px;
+   
 }
