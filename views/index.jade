@@ -1,6 +1,7 @@
 doctype html
 html
   head
+    title TweetRise
     link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css', rel='stylesheet')
     link(href='./stylesheets/index.css', rel='stylesheet')
   body
@@ -11,25 +12,16 @@ html
       p.nav.navbar-nav.nomdusite TweetRise
       form.navbar-form.navbar-right.inline-form
         div
-          a.btn.btn-danger.btn-sm(href='#', role='button') Deconnexion
-    br
-    br
-    br
-    br
-    .container
-      .row
-        .col-lg-8.col-lg-offset-2
-          .pagetweet
-            p(align='center') Quoi de neuf ?
-            form(align='center', ,='', action='/', method='POST')
-              textarea(name='tweet', ,='', rows='3,', columns='50')
-            input(align='center', type='submit', ,='', content='Envoyer')
-
-            ul
-              - each tweet in tweets
-                li= tweet
-            br
-            br
-            br
-            br
-
+          a.btn.btn-danger.btn-sm(href='http://localhost:3200/', role='button') Deconnexion
+  .container
+    h3 Quoi de neuf ?
+      form(action='/index', method='POST')
+        textarea(name='tweet', rows=4, cols=150, maxlength='142', placeholder='Exprimez vous')
+        br
+        input(type='submit', content='Envoyer')
+        
+        - each tweet in tweets
+          h4 Un connect&eacute; &agrave; post&eacute; : 
+          .case
+              p= tweet
+          br
