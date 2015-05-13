@@ -7,18 +7,21 @@ html
   body
   .navbar.navbar-default
     .container
-      a.navbar-brand(href='#')
+      a.navbar-brand(href='/')
         img#Logo(alt='Logo', src='http://www.bullionexperts.com/images/SBI-logo.svg.png')
       p.nav.navbar-nav.nomdusite TweetRise
       form.navbar-form.navbar-right.inline-form
         div
-          a.btn.btn-danger.btn-sm(href='http://localhost:3200/', role='button') Deconnexion
+          a.btn.btn-danger.btn-sm(href='/pagedeco2', role='button') Deconnexion
   .container
     h3 Quoi de neuf ?
+      br
       form(action='/index', method='POST')
         textarea(name='tweet', rows=4, cols=150, maxlength='142', placeholder='Exprimez vous')
         br
         input(type='submit', content='Envoyer')
+        br
+        br
         
         - each tweet in tweets
           h4 Un connect&eacute; &agrave; post&eacute; : 
