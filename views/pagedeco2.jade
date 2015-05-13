@@ -7,16 +7,16 @@ html
   body
     .navbar.navbar-default
       .container
-        a.navbar-brand(href='#')
+        a.navbar-brand(href='/')
           img#Logo(alt='Logo', src='http://www.bullionexperts.com/images/SBI-logo.svg.png')
         p.nav.navbar-nav.nomdusite TweetRise
         form.navbar-form.navbar-right.inline-form
           div
             input.input-sm.form-control(placeholder='Pseudo')
-            input.input-sm.form-control(placeholder='email')
-            a.btn.btn-primary.btn-sm(href='http://localhost:3200/index', role='button') Connexion
+            input.input-sm.form-control(placeholder='Mot de passe')
+            a.btn.btn-primary.btn-sm(href='/index', role='button') Connexion
     .corps
       h1(align='center') Partagez votre experience
       br
       div(align='center')
-        a.btn.btn-danger.btn-lg.btn-huge.lato(href='http://localhost:3200/inscription') Devenir membre
+        a.btn.btn-danger.btn-lg.btn-huge.lato(href='/inscription') Devenir membre
