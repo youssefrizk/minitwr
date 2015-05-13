@@ -6,7 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var app = express();
-var pagedeco = require('./routes/pagedeco');
+var pagedeco2 = require('./routes/pagedeco2');
 var index = require('./routes/index');
 var inscription = require('./routes/inscription');
 
@@ -22,7 +22,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'jade');
 app.set('views', path.join(__dirname, 'views'));
 
-app.use('/', pagedeco);
+app.use('/', pagedeco2);
 app.use('/inscription', inscription);
 app.use('/index', index);
 
